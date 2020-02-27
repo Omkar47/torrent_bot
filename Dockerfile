@@ -19,7 +19,7 @@ RUN mkdir /bot
 RUN chmod 777 /bot
 WORKDIR /bot
 
-RUN git clone -b master https://github.com/thwarikh/torrent_bot.git /bot
+RUN git clone -b master https://github.com/Omkar47/torrent_bot /bot
 
 COPY ./src/.constants.js /bot/src/
 COPY ./aria*.sh ./client_secret.json ./credentials.json ./start.sh /bot/
